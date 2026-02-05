@@ -63,7 +63,7 @@ public class loginboardcontroller {
         String username = usernametxt.getText();
         String password = showPassword ? passwordVisibleTxt.getText() : passwordtxt.getText();
 
-        if (username.equals("kranti") && password.equals("12345")) {
+        if (username.equals("kranti") && password.equals("123456")) {
             try {
                 Parent root = FXMLLoader.load(HelloApplication.class.getResource("propertydashboardd/propertydashboardView.fxml"));
                 Stage stage = new Stage();
