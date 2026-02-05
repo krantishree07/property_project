@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.property.charts.chartscontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfcde" height="679.0" layoutX="10.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="779.0" />
+      <PieChart fx:id="bschart" layoutX="82.0" layoutY="138.0" prefHeight="528.0" prefWidth="635.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </PieChart>
+      <Label alignment="CENTER" layoutX="213.0" layoutY="28.0" prefHeight="62.0" prefWidth="389.0" text="BUYER SELLER ANALYZER" textFill="#0f0e0e">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="125.0" layoutX="82.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/Screenshot_29-7-2025_16150_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="125.0" layoutX="626.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/Screenshot_29-7-2025_16150_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

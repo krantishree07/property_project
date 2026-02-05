@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.property.propertylisttable.propertylisttablecontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="665.0" layoutX="21.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="761.0" />
+      <Label layoutX="238.0" layoutY="38.0" text="PROPERTY RECORDS">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="168.0" text="Property Types">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="propertytypecombo" layoutX="60.0" layoutY="213.0" prefHeight="38.0" prefWidth="164.0" promptText="Property Types" />
+      <TableView fx:id="tableview" layoutX="51.0" layoutY="298.0" prefHeight="320.0" prefWidth="712.0" />
+      <Button layoutX="328.0" layoutY="251.0" mnemonicParsing="false" onAction="#doshowrecords" text="SHOW RECORDS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="297.0" layoutY="625.0" mnemonicParsing="false" onAction="#doexcel" prefHeight="38.0" prefWidth="200.0" text="EXPORT TO EXCEL">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="308.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Screenshot_31-7-2025_135054_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="108.0" layoutX="90.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/Screenshot_29-7-2025_16147_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="108.0" layoutX="595.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/Screenshot_29-7-2025_16147_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

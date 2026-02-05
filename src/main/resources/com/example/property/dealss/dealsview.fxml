@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.property.deals.dealscontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="702.0" stroke="BLACK" strokeType="INSIDE" width="806.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="694.0" layoutX="5.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="797.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="91.0" layoutX="18.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="767.0" />
+      <Label layoutX="251.0" layoutY="29.0" text="DEALS MATURED" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="251.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" width="304.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="6.0" layoutX="252.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="304.0" />
+      <Button alignment="CENTER" graphicTextGap="6.0" layoutX="265.0" layoutY="590.0" mnemonicParsing="false" onAction="#dodone" prefHeight="24.0" prefWidth="161.0" text="DONE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="283.0" layoutX="18.0" layoutY="272.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="380.0" />
+      <Label layoutX="39.0" layoutY="288.0" text="Property ID">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="pidcombo" layoutX="213.0" layoutY="288.0" onAction="#selectrid" prefHeight="34.0" prefWidth="172.0" promptText="Property ID" />
+      <Label layoutX="37.0" layoutY="418.0" text="Date of Deal">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dod" layoutX="213.0" layoutY="420.0" prefHeight="34.0" prefWidth="172.0" promptText="Date of Deal" />
+      <DatePicker fx:id="rd" layoutX="213.0" layoutY="499.0" prefHeight="34.0" prefWidth="172.0" promptText="Registry Date" />
+      <Label layoutX="39.0" layoutY="499.0" text="Registry Date">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="283.0" layoutX="403.0" layoutY="272.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="380.0" />
+      <TextField fx:id="totaltxt" layoutX="596.0" layoutY="288.0" prefHeight="34.0" prefWidth="172.0" promptText="Total Amount" />
+      <Label layoutX="417.0" layoutY="288.0" text="Total Amount">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="418.0" text="Balance">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="balancetxt" layoutX="596.0" layoutY="420.0" prefHeight="34.0" prefWidth="172.0" promptText="Balance" />
+      <Label layoutX="423.0" layoutY="351.0" text="Advance Pay">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="advancetxt" layoutX="596.0" layoutY="351.0" prefHeight="34.0" prefWidth="172.0" promptText="Advance Pay" />
+      <Label layoutX="426.0" layoutY="499.0" text="Commission">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="commissiontxt" layoutX="596.0" layoutY="499.0" prefHeight="34.0" prefWidth="172.0" promptText="Commission" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="134.0" layoutX="18.0" layoutY="126.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="767.0" />
+      <Label layoutX="61.0" layoutY="149.0" text="Buyer Mobile No.">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="bmobilecombo" editable="true" layoutX="265.0" layoutY="148.0" onAction="#getbname" prefHeight="34.0" prefWidth="172.0" promptText="Buyer Mobile No." />
+      <Label layoutX="479.0" layoutY="208.0" text="Name">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="snametxt" layoutX="556.0" layoutY="208.0" prefHeight="34.0" prefWidth="172.0" promptText="Name" />
+      <Label layoutX="61.0" layoutY="208.0" text="Seller Mobile No.">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="148.0" text="Name">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bnametxt" layoutX="556.0" layoutY="148.0" prefHeight="34.0" prefWidth="172.0" promptText="Name" />
+      <Label fx:id="lblstatus" layoutX="18.0" layoutY="582.0" prefHeight="108.0" prefWidth="229.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <TextField fx:id="smobiletxt" layoutX="265.0" layoutY="208.0" prefHeight="34.0" prefWidth="172.0" promptText="Seller Mobile No." />
+      <Label layoutX="36.0" layoutY="351.0" text="Corporation No.">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="corporationtxt" layoutX="213.0" layoutY="351.0" prefHeight="34.0" prefWidth="172.0" promptText="Corporation No." />
+      <Button alignment="CENTER" graphicTextGap="6.0" layoutX="448.0" layoutY="590.0" mnemonicParsing="false" onAction="#doclear" prefHeight="24.0" prefWidth="161.0" text="CLEAR">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="91.0" fitWidth="112.0" layoutX="46.0" layoutY="17.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/Screenshot_29-7-2025_16115_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="112.0" layoutX="642.0" layoutY="17.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/Screenshot_29-7-2025_16115_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

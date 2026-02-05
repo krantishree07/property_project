@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.property.areachart.areachartcontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="672.0" layoutX="17.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="771.0" />
+      <ImageView fitHeight="662.0" fitWidth="760.0" layoutX="22.0" layoutY="21.0" opacity="0.45" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/BlO5Hn.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="257.0" layoutY="50.0" text="AREA ANALYSIS">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="485.0" layoutX="108.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="589.0" />
+      <PieChart fx:id="chart" layoutX="108.0" layoutY="137.0" prefHeight="485.0" prefWidth="589.0" />
+   </children>
+</AnchorPane>

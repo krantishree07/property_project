@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.property.loginboard.loginboardcontroller">
+   <children>
+      <ImageView fitHeight="543.0" fitWidth="633.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Downloads/Screenshot_31-7-2025_124230_www.bing.com.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2e8ff65" height="556.0" layoutX="1.0" stroke="#55391e" strokeType="INSIDE" strokeWidth="6.0" width="646.0" />
+      <Label layoutX="184.0" layoutY="208.0" text="UserName">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernametxt" layoutX="294.0" layoutY="206.0" prefHeight="34.0" prefWidth="178.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <HBox layoutX="294.0" layoutY="292.0" spacing="5">
+         <PasswordField fx:id="passwordtxt" prefHeight="34.0" prefWidth="145.0">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </PasswordField>
+         <TextField fx:id="passwordVisibleTxt" managed="false" prefHeight="34.0" prefWidth="145.0" visible="false">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+         <Button fx:id="togglePasswordBtn" onAction="#togglePasswordVisibility" prefHeight="32.0" prefWidth="40.0" text=" 🔘">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+      </HBox>
+
+      <Label layoutX="188.0" layoutY="294.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="109.0" layoutY="192.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Dropbox/demo/src/main/resources/com/example/demo/loginn/internet-admin-icon-in-black-color-free-vector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="63.0" layoutX="109.0" layoutY="286.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../../../Users/krant/Dropbox/demo/src/main/resources/com/example/demo/loginn/png-transparent-computer-icons-password-black-and-white-заметка-symbol.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblstatus" graphicTextGap="6.0" layoutX="224.0" layoutY="451.0" prefHeight="55.0" prefWidth="218.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="99.0" fitWidth="124.0" layoutX="510.0" layoutY="24.0" pickOnBounds="true">
+         <image>
+            <Image url="@house%20gif.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#55391e" height="75.0" layoutX="140.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="365.0" />
+      <Label alignment="CENTER" layoutX="127.0" layoutY="44.0" lineSpacing="4.0" prefHeight="36.0" prefWidth="394.0" text="LOGIN TO PROPERTY PORTAL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#55391e" height="64.0" layoutX="217.0" layoutY="368.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="232.0" />
+      <Button graphicTextGap="6.0" layoutX="237.0" layoutY="380.0" mnemonicParsing="false" onAction="#dologin" prefHeight="39.0" prefWidth="192.0" text="LOGIN" textFill="#5e1466" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="99.0" fitWidth="124.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true">
+         <image>
+            <Image url="@house%20gif.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#55391e" height="6.0" layoutX="142.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="365.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#55391e" height="6.0" layoutX="142.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="365.0" />
+   </children>
+</AnchorPane>
